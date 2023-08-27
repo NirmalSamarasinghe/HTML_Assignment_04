@@ -1,0 +1,26 @@
+div{
+    width: 200px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    border: 5px solid darkred;
+    border-radius: 100px;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    animation: water-drop 5s linear infinite;
+}
+@keyframes water-drop {
+
+   from{
+       width: 10px;
+   }
+    to{
+        width: 200px;
+        opacity: 0;
+    }
+}
+
