@@ -1,0 +1,74 @@
+:root{
+    --slide-width:95vw;
+    --slide-height:80vh;
+}
+section{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+
+    animation: slide 5s alternate infinite;
+}
+div{
+    width: var(--slide-width);
+    height: var(--slide-height);
+
+}
+main{
+    width: var(--slide-width);
+    height: var(--slide-height);
+    border: 5px solid darkred;
+    overflow: hidden;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+div:first-child{
+    background-image: url("../images/tree_1.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+div:nth-child(2){
+    background-image: url("../images/tree_2.jpg");
+    background-position: center;
+    background-size: cover
+}
+div:nth-child(3){
+    background-image: url("../images/tree_3.jpg");
+    background-position: center;
+    background-size: cover
+}
+div:nth-child(4){
+     background-image: url("../images/tree_4.jpg");
+    background-position: center;
+    background-size: cover
+}
+
+@keyframes slide {
+    0%,20%{
+        transform: translateX(0%);
+
+    }
+    25%,45%{
+        transform: translateX(-25%);
+
+    }
+    50%,70%{
+        transform: translateX(-50%);
+    }
+    75%,100%{
+        transform: translateX(-75%);
+
+    }
+
+}
+
+
