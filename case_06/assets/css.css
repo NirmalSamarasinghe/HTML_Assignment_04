@@ -1,0 +1,116 @@
+body{
+    overflow: hidden;
+}
+main>section{
+   position: relative;
+}
+
+main>section>div:first-child{
+    position: relative;
+    margin-top: -120px;
+    margin-left: -100px;
+}
+
+#road>div{
+    position: absolute;
+    top: 560px;
+    animation: slide infinite ease-in-out;
+    animation-duration: 6.15s;
+    animation-direction: normal;
+}
+
+/*
+main>section>div:nth-child(2){
+    position: absolute;
+    top: 560px;
+}
+*/
+
+#road>div:nth-child(2){
+    position: absolute;
+    top: 560px;
+    left: 5000px;
+}
+
+/*main>section>div:nth-child(4){
+    position: absolute;
+    top: 310px;
+}*/
+
+#city>div{
+    position: absolute;
+    top: 310px;
+    animation: slide infinite ease-in-out;
+    animation-duration: 6.15s;
+    animation-direction: normal;
+}
+
+#city>div:nth-child(2){
+    left: 1415px;
+}
+
+#city>div:nth-child(3){
+    left: 2830px;
+}
+
+main>section>div:nth-child(4){
+    position: absolute;
+    top: 490px;
+    left: 460px;
+}
+
+.wheels{
+    animation: wheel infinite ease-in-out;
+    animation-duration: 6.15s;
+    animation-direction: normal;
+}
+
+main>section>div:nth-child(5){
+    position: absolute;
+    top: 560px;
+    left: 488px;
+}
+
+main>section>div:nth-child(6){
+    position: absolute;
+    top : 560px;
+    left: 702px;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0%);
+    }
+    /*79%{
+        transform: translateX(-80%);
+    }*/
+    /*80%{
+        transform: translateX(-80%);
+    }
+    95%{
+        transform: translateX(-95%);
+    }*/
+    100%{
+        transform: translateX(-90%);
+    }
+}
+
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(0deg);
+    }
+    72% {
+        transform: rotate(-360deg);
+    }
+    /*80%{
+        transform: rotate(-300deg);
+    }*/
+    100%{
+        transform: rotate(-220deg);
+    }
+}
+
+
